@@ -22,7 +22,7 @@ public class DBWorker {
 		session.beginTransaction();
 		
 		String name = cprofile.getName();
-		System.out.println(user.getUserid());
+		//System.out.println(user.getUserid());
 		String hqprof = "from User cd where cd.username = :name1";
 		Query qprof = session.createQuery(hqprof);
 		
